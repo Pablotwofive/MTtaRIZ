@@ -15,7 +15,8 @@ class Lab2 {
         }
     }
 
-    // 2. Метод для створення та виводу 2D масиву
+    // 2. Метод для створення та виводу 2D масиву 
+    // 2. Метод для створення та виводу 2D масиву 
     public static void printArray(int rows, int cols) {
         int[][] arr = new int[rows][cols];
         int value = 1;
