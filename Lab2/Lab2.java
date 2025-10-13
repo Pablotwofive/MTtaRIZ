@@ -34,6 +34,7 @@ public class Lab2 {
         printTree(6);
 
         // Вызов метода массива
+        // Вызов метода массива
         System.out.println("\nМасив:");
         printArray(3, 4);
     }
