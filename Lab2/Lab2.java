@@ -31,9 +31,8 @@ public class Lab2 {
     public static void main(String[] args) {
         // Вызов метода ёлки
         System.out.println("Ялинка:");
-        printTree(6);
+        printTree(10);
 
-        // Вызов метода массива
         // Вызов метода массива
         System.out.println("\nМасив:");
         printArray(3, 4);
