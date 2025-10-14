@@ -3,5 +3,6 @@ class Lab1 {
         System.out.println("Its works");
         System.out.println("Lab1 completed"); // <- добавили новую строку 
         System.out.println("Lab1 completed"); // <- добавили новую строку 
+        System.out.println("Lab1 completed"); // <- добавили новую строку 
     }
 }
