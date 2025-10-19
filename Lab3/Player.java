@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
 public class Player {
-    private String name;   // ім'я гравця
-    private char symbol;   // символ гравця (X або O)
+    private String name;   
+    private char symbol;   
 
-    // Конструктор
+    
     public Player(String name, char symbol) {
         this.name = name;
         this.symbol = symbol;
     }
 
-    // Метод для виконання ходу
+    
     public int[] makeMove() {
         Scanner sc = new Scanner(System.in);
         System.out.print(name + " (" + symbol + "), введи рядок (1-3): ");
@@ -20,7 +20,7 @@ public class Player {
         return new int[]{row, col};
     }
 
-    // Гетери
+    
     public String getName() {
         return name;
     }
