@@ -2,6 +2,7 @@ public class GameBoard {
     private char[][] board;  // масив для поля
 
     // Конструктор — створює порожнє поле
+    // Конструктор — створює порожнє поле
     public GameBoard() {
         board = new char[3][3];
         for (int i = 0; i < 3; i++) {
