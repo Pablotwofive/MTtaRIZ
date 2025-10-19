@@ -10,7 +10,7 @@ public class Player {
         this.symbol = symbol;
     }
 
-    
+
     public int[] makeMove() {
         Scanner sc = new Scanner(System.in);
         System.out.print(name + " (" + symbol + "), введи рядок (1-3): ");
@@ -19,8 +19,7 @@ public class Player {
         int col = sc.nextInt() - 1;
         return new int[]{row, col};
     }
-
-    
+ 
     public String getName() {
         return name;
     }

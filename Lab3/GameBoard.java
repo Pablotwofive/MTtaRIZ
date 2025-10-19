@@ -1,7 +1,5 @@
 public class GameBoard {
-    private char[][] board;  
-
-    
+    private char[][] board;   
     
     public GameBoard() {
         board = new char[3][3];
@@ -12,7 +10,6 @@ public class GameBoard {
         }
     }
 
-    
     public void printBoard() {
         System.out.println("-------------");
         for (int i = 0; i < 3; i++) {
@@ -24,8 +21,7 @@ public class GameBoard {
             System.out.println("-------------");
         }
     }
-
-    
+ 
     public boolean makeMove(int row, int col, char symbol) {
         if (row < 0 || row >= 3 || col < 0 || col >= 3 || board[row][col] != ' ') {
             System.out.println("❌ Неправильний хід! Спробуй ще раз.");
