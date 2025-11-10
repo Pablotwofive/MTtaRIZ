@@ -5,21 +5,21 @@ public class Db {
 
     public Db() {
         try {
-            // 🔹 Проверь базу и пароль
+            
             String url = "jdbc:mysql://localhost:3306/myGame?useSSL=false";
             String user = "root";
-            String pass = "Lolka13371337"; // ← поставь свой пароль
+            String pass = "Lolka13371337"; 
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(url, user, pass);
-            System.out.println("✅ Підключення до бази даних встановлено!");
+            System.out.println(" Підключення до бази даних встановлено!");
         } catch (Exception e) {
-            System.out.println("❌ Помилка підключення до бази даних:");
+            System.out.println(" Помилка підключення до бази даних:");
             e.printStackTrace();
         }
     }
 
-    // 🔹 Перевірка логіну та паролю
+    
     public boolean authenticate(String username, String password) {
         String sql = "SELECT COUNT(*) FROM users WHERE username=? AND password=?";
         try (PreparedStatement pst = con.prepareStatement(sql)) {

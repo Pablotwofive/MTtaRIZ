@@ -9,7 +9,7 @@ public class Main {
         String username1, password1;
         String username2, password2;
 
-        // === Авторизація гравця 1 ===
+        
         System.out.println("Авторизація гравця 1:");
         System.out.print("Логін: ");
         username1 = sc.nextLine().trim();
@@ -17,14 +17,14 @@ public class Main {
         password1 = sc.nextLine().trim();
 
         if (!db.authenticate(username1, password1)) {
-            System.out.println("❌ Невірний логін або пароль для гравця 1!");
+            System.out.println(" Невірний логін або пароль для гравця 1!");
             db.close();
             sc.close();
             return;
         }
-        System.out.println("✅ Гравець 1 авторизований: " + username1);
+        System.out.println(" Гравець 1 авторизований: " + username1);
 
-        // === Авторизація гравця 2 ===
+        
         System.out.println("\nАвторизація гравця 2:");
         System.out.print("Логін: ");
         username2 = sc.nextLine().trim();
@@ -37,11 +37,11 @@ public class Main {
             sc.close();
             return;
         }
-        System.out.println("✅ Гравець 2 авторизований: " + username2);
+        System.out.println(" Гравець 2 авторизований: " + username2);
 
         db.close();
-        // 🔹 Тут идёт твоя логика игры (если классы Player и GameBoard есть)
-        System.out.println("\n🎮 Обидва гравці авторизовані! Можна починати гру!");
+        
+        System.out.println("\n Обидва гравці авторизовані! Можна починати гру!");
         System.out.println("=== Гра Хрестики-Нолики ===");
  
         Player player1 = new Player("Гравець 1", 'X');
@@ -67,7 +67,7 @@ public class Main {
    
             if (board.isFull()) {
                 board.printBoard();
-                System.out.println(" Нiчия!");
+                System.out.println(" Нiчия");
                 break;
             }
  
