@@ -19,6 +19,7 @@ public class Main {
         if (!db.authenticate(username1, password1)) {
             System.out.println("❌ Невірний логін або пароль для гравця 1!");
             db.close();
+            sc.close();
             return;
         }
         System.out.println("✅ Гравець 1 авторизований: " + username1);
@@ -33,12 +34,12 @@ public class Main {
         if (!db.authenticate(username2, password2)) {
             System.out.println("❌ Невірний логін або пароль для гравця 2!");
             db.close();
+            sc.close();
             return;
         }
         System.out.println("✅ Гравець 2 авторизований: " + username2);
 
         db.close();
-
         // 🔹 Тут идёт твоя логика игры (если классы Player и GameBoard есть)
         System.out.println("\n🎮 Обидва гравці авторизовані! Можна починати гру!");
         System.out.println("=== Гра Хрестики-Нолики ===");
@@ -70,8 +71,9 @@ public class Main {
                 break;
             }
  
-            currentPlayer = (currentPlayer == player1) ? player2 : player1;
+            currentPlayer = (currentPlayer == player1) ? player2 : player1;  
         }
+        sc.close();
     }
 }
 

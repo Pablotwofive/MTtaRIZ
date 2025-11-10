@@ -17,6 +17,7 @@ public class Player {
         int row = sc.nextInt() - 1;
         System.out.print(name + " (" + symbol + "), введи стовпець (1-3): ");
         int col = sc.nextInt() - 1;
+        sc.close();
         return new int[]{row, col};
     }
  
